@@ -1,3 +1,12 @@
 Rogue Hack Lab "secrets".
 
-secrets.txt.gpg is an encrypted text file containing important credentials and stuff.
+In general:
+ * use 'hosted-services@roguehacklab.com' as email address when signing up for services on behalf of
+   Rogue Hack Lab.
+ * treat the gpg passphrase with care (don't record it, email it, IM it...)
+
+Working with secrets.txt
+ * make sure your local git clone is up-to-date before touching anything; merging is hard.
+ * decrypt secrets.txt.gpg with gpg --decrypt --symmetric
+ * record usernames/passwords and details into secrets.txt
+ * encrypt secrets.txt with gpg --encrypt --symmetric
