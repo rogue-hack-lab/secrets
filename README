@@ -4,10 +4,11 @@ In general:
  * use 'hosted-services@roguehacklab.com' as email address when signing up for services on behalf of
    Rogue Hack Lab.
  * treat the gpg passphrase with care (don't record it, email it, IM it...)
+ * keep secrets.sh working as a shell script (```source secrets.sh``` shouldn't error)
 
-Working with secrets.txt
+Working with secrets.sh
  * make sure your local git clone is up-to-date before touching anything; merging is hard.
- * decrypt secrets.txt.gpg with gpg --decrypt secrets.txt.gpg > secrets.txt
- * record usernames/passwords and details into secrets.txt
- * encrypt secrets.txt with gpg --symmetric secrets.txt
- * don't leave secrets.txt laying around unencrypted!
+ * decrypt secrets.sh.gpg with gpg --decrypt secrets.sh.gpg > secrets.sh
+ * record usernames/passwords and details into secrets.sh
+ * encrypt secrets.sh with gpg --symmetric secrets.sh
+ * don't leave secrets.sh laying around unencrypted!
