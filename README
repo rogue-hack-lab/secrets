@@ -7,7 +7,7 @@ In general:
 
 Working with secrets.txt
  * make sure your local git clone is up-to-date before touching anything; merging is hard.
- * decrypt secrets.txt.gpg with gpg --decrypt > secrets.txt
+ * decrypt secrets.txt.gpg with gpg --decrypt secrets.txt.gpg > secrets.txt
  * record usernames/passwords and details into secrets.txt
  * encrypt secrets.txt with gpg --symmetric secrets.txt
  * don't leave secrets.txt laying around unencrypted!
